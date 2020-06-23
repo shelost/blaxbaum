@@ -1,0 +1,134 @@
+.avatars {
+  width: 100%;
+  width: 100vw;
+  margin: auto;
+}
+
+.avatar {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 4vw;
+  padding-top: 4vw;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar.last {
+  border: none;
+}
+
+.avatar .pfp {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 20vw;
+  border: 5px solid white;
+  margin-right: 3vw;
+  background-color: #050505;
+}
+
+.avatar .expo {
+  width: 55%;
+}
+
+.avatar .expo h1 {
+  font-size: 3vw;
+  margin: 0;
+}
+
+.avatar .expo h2 {
+  font-size: 1.5vw;
+  margin: 0.2vw;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.avatar .expo p {
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.contact .sns {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-right: 2vw;
+  opacity: 0.8;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.contact .sns img {
+  width: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.contact .sns p {
+  font-size: 1vw;
+  font-weight: 700;
+  width: 100%;
+  color: white;
+}
+
+.contact .sns:hover {
+  opacity: 1;
+}
+
+.text {
+  width: 80vw;
+  margin: auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 5vw;
+}
+
+.text p {
+  font-size: 1.3vw;
+  line-height: 1.8vw;
+  color: #A0A0A0;
+}
+
+.text p span {
+  color: white;
+}
+
+.main {
+  background-image: url("../Assets/city-unsplash.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+}
+/*# sourceMappingURL=team.css.map */
