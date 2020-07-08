@@ -10,6 +10,8 @@ $darkblue: #0241B9;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgba(black, 0.3);
+    background-blend-mode: overlay;
     position: relative;
     display: flex;
     align-items: center;
@@ -18,7 +20,7 @@ $darkblue: #0241B9;
         padding: 3vw;
         width: 60%;
         color: white;
-        background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.4), rgba(black, 0));
+        //background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.4), rgba(black, 0));
 
         h1{
             margin: 0;
@@ -101,6 +103,8 @@ $darkblue: #0241B9;
     align-items: center;
     justify-content: center;
     background-image: url('../Assets/city-unsplash-2.png');
+    background-color: rgba(black, 0.3);
+    background-blend-mode: overlay;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,7 +118,7 @@ $darkblue: #0241B9;
         justify-content: center;
         padding: 2vw;
         text-align: center;
-        background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.5), rgba(black, 0));
+       // background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.5), rgba(black, 0));
         h1{
             font-size: 2.5vw;
             margin: 0.5vw;

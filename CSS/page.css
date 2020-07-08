@@ -1,0 +1,241 @@
+.main {
+  width: 95vw;
+  margin: auto;
+  border-radius: 1vw;
+  text-align: center;
+  padding-top: 2vw;
+  padding-bottom: 6vw;
+  background-image: url("../Assets/gradient.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main.letter {
+  background-color: #FFE7A8;
+}
+
+.main.online {
+  background-color: #B3FFA8;
+}
+
+.main.resume {
+  background-color: #A8D3FF;
+}
+
+.main.interview {
+  background-color: #E7A8FF;
+}
+
+.main .title {
+  margin-bottom: 5vw;
+}
+
+.main .title .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .title img {
+  height: 4vw;
+  margin-left: 1vw;
+}
+
+.main .title h1 {
+  font-size: 4vw;
+  font-weight: 900;
+  color: black;
+}
+
+.main .title p {
+  color: black;
+  width: 80%;
+  margin: auto;
+  margin-top: 1vw;
+  font-size: 1.5vw;
+}
+
+.sec {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 2vw;
+  margin-bottom: 2vw;
+}
+
+.sec .expo {
+  margin: 2vw;
+  width: 45vw;
+}
+
+.sec .expo p {
+  color: black;
+  font-size: 1.5vw;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 0.5vw;
+}
+
+.sec .expo h1 {
+  font-size: 2.5vw;
+  color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  margin-bottom: 1vw;
+}
+
+.sec .expo h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.5vw;
+  font-weight: 500;
+  width: 80%;
+  margin: auto;
+}
+
+.sec img {
+  height: 15vw;
+  width: auto;
+  margin: 0;
+}
+
+.sec.final {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hl {
+  color: black;
+  background-color: #ffef99;
+}
+
+.ul {
+  color: black;
+  -webkit-text-decoration: underline double;
+          text-decoration: underline double;
+  -webkit-text-decoration-color: royalblue;
+          text-decoration-color: royalblue;
+}
+
+.dot {
+  color: black;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  -webkit-text-decoration-color: #00C129;
+          text-decoration-color: #00C129;
+}
+
+.thru {
+  color: rgba(0, 0, 0, 0.4);
+  -webkit-text-decoration: line-through wavy;
+          text-decoration: line-through wavy;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+}
+
+.top {
+  height: 2vw;
+  width: 95%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .menu div {
+  width: 1.5vw;
+  height: 1.5vw;
+  margin-left: 0.5vw;
+  border-radius: 2vw;
+  background-color: black;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.top .menu .red {
+  background-color: #E60000;
+}
+
+.top .menu .red:hover {
+  background-color: #b30000;
+}
+
+.top .menu .yellow {
+  background-color: #03CA00;
+}
+
+.top .menu .yellow:hover {
+  background-color: #029700;
+}
+
+.top .menu .green {
+  background-color: #FFCD00;
+}
+
+.top .menu .green:hover {
+  background-color: #cca400;
+}
+
+.top .bar {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 2vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.top .bar:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5vw;
+}
+
+.carousel img {
+  height: 100%;
+  margin: 1vw;
+  border-radius: 1vw;
+}
+/*# sourceMappingURL=page.css.map */

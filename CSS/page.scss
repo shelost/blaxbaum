@@ -1,0 +1,188 @@
+.main{
+    &.letter{
+        background-color: #FFE7A8;
+    }
+    &.online{
+        background-color: #B3FFA8;
+    }
+    &.resume{
+        background-color: #A8D3FF;
+    }
+    &.interview{
+        background-color: #E7A8FF;
+    }
+
+    width: 95vw;
+    margin: auto;
+    border-radius: 1vw;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 6vw;
+    background-image: url('../Assets/gradient.png');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .title{
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            height: 4vw;
+            margin-left: 1vw;
+        }
+        h1{
+            font-size: 4vw;
+            font-weight: 900;
+            color: black;
+        }
+        p{
+            color: black;
+            width: 80%;
+            margin: auto;
+            margin-top: 1vw;
+            font-size: 1.5vw;
+        }
+        margin-bottom: 5vw;
+    }
+}
+
+.sec{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid rgba(black, 0.2);
+    padding-bottom: 2vw;
+    margin-bottom: 2vw;
+    .expo{
+        margin: 2vw;
+        width: 45vw;
+
+        p{
+            color: black;
+            font-size: 1.5vw;
+            font-weight: 900;
+            margin: 0;
+            margin-bottom: 0.5vw;
+        }
+        h1{
+            font-size: 2.5vw;
+            color: black;
+            width: fit-content;
+            margin: 0;
+            margin-bottom: 1vw;
+        }
+        h2{
+            color: rgba(black, 0.8);
+            font-size: 1.5vw;
+            font-weight: 500;
+            width: 80%;
+            margin: auto;
+
+        }
+    }
+    img{
+        height: 15vw;
+        width: auto;
+        margin: 0;
+    }
+    &.final{
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+// Resume Review
+
+.hl{
+    color: black;
+    background-color: lighten(gold, 30%);
+}
+.ul{
+    color: black;
+    text-decoration: underline double;
+    text-decoration-color: royalblue;
+}
+.dot{
+    color: black;
+    text-decoration: underline dotted;
+    text-decoration-color: #00C129;
+}
+.thru{
+    color: rgba(black, 0.4);
+    text-decoration: line-through wavy;
+    text-decoration-color: red;
+}
+
+// Online Presence
+
+$red:#E60000;
+$green:#FFCD00;
+$yellow: #03CA00;
+
+.top{
+    height: 2vw;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    .menu{
+        display: flex;
+        align-items: center;
+        div{
+            width: 1.5vw;
+            height: 1.5vw;
+            margin-left: 0.5vw;
+            border-radius: 2vw;
+            background-color: black;
+            transition: 0.2s ease;
+        }
+        .red{
+            background-color: $red;
+            &:hover{
+                background-color: darken($red, 10%);
+            }
+        }
+        .yellow{
+            background-color: $yellow;
+            &:hover{
+                background-color: darken($yellow, 10%);
+            }
+        }
+        .green{
+            background-color: $green;
+            &:hover{
+                background-color: darken($green, 10%);
+            }
+        }
+    }
+    .bar{
+        background-color: rgba(black, 0.2);
+        border-radius: 2vw;
+        flex: 1;
+        height: 2vw;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+        transition: 0.2s ease;
+        &:hover{
+            background-color: rgba(black, 0.3);
+        }
+    }
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vw;
+    img{
+        height: 100%;
+        margin: 1vw;
+        border-radius: 1vw;
+    }
+}
