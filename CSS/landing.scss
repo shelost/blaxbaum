@@ -1,133 +1,273 @@
 $blue: #0666DA;
 $darkblue: #0241B9;
 
-.landing{
-    height: 88vh;
-    width: 100vw;
-    margin: 0;
-    background-image: url('../Assets/city-unsplash.png');
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(black, 0.3);
-    background-blend-mode: overlay;
-    position: relative;
-    display: flex;
-    align-items: center;
+@media screen and (min-width: 800px){
 
-    .expo{
-        padding: 3vw;
-        width: 60%;
-        color: white;
-        //background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.4), rgba(black, 0));
+    .landing{
+        height: 88vh;
+        width: 100vw;
+        margin: 0;
+        background-image: url('../Assets/city-unsplash.png');
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(black, 0.3);
+        background-blend-mode: overlay;
+        position: relative;
+        display: flex;
+        align-items: center;
 
-        h1{
-            margin: 0;
-            font-size: 3vw;
+        .expo{
+            padding: 3vw;
+            width: 60%;
+            color: white;
+            //background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.4), rgba(black, 0));
+
+            h1{
+                margin: 0;
+                font-size: 3vw;
+            }
+            h2{
+                font-size: 2vw;
+
+            }
+            h3{
+                font-size: 1.3vw;
+                color: #C0C0C0;
+                font-weight: 500;
+                line-height: 1.7vw;
+                margin: 0;
+            }
+
+            .hor-flex{
+
+                margin-top: 2vw;
+
+                .button{
+                    margin-right: 1vw;
+                }
+            }
         }
-        h2{
-            font-size: 2vw;
+    }
 
+    .hor-flex{
+        display: flex;
+        align-items: center;
+    }
+
+    .button{
+        background-color: black;
+        color: lighten(gold, 30%);
+        border: 1px solid black;
+        border-radius: 0.5vw;
+        padding: 1vw;
+        font-weight: 700;
+        transition: 0.2s ease;
+        &:hover{
+            color: gold;
+            border: 1px solid gold;
         }
-        h3{
-            font-size: 1.3vw;
-            color: #C0C0C0;
-            font-weight: 500;
-            line-height: 1.7vw;
-            margin: 0;
+    }
+
+    .points{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: top;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+
+        .point{
+            width: 25vw;
+            text-align: center;
+            h1{
+                font-size: 2vw;
+            }
+            img{
+                width: 50%;
+            }
+            p{
+                font-size: 1vw;
+                line-height: 1.3vw;
+                color: rgba(white, 0.8);
+            }
         }
 
-        .hor-flex{
 
-            margin-top: 2vw;
+    }
 
-            .button{
-                margin-right: 1vw;
+    .refs{
+        height: 50vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Assets/city-unsplash-2.png');
+        background-color: rgba(black, 0.3);
+        background-blend-mode: overlay;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .button{
+            margin: 0.5vw;
+        }
+        .expo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2vw;
+            text-align: center;
+        // background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.5), rgba(black, 0));
+            h1{
+                font-size: 2.5vw;
+                margin: 0.5vw;
+            }
+            h2{
+                font-size: 1.5vw;
+                color: rgba(white, 0.9);
+                margin: 1vw;
+                margin-bottom: 1.5vw;
             }
         }
     }
 }
 
-.hor-flex{
-    display: flex;
-    align-items: center;
-}
+@media screen and (max-width: 800px){
 
-.button{
-    background-color: black;
-    color: lighten(gold, 30%);
-    border: 1px solid black;
-    border-radius: 0.5vw;
-    padding: 1vw;
-    font-weight: 700;
-    transition: 0.2s ease;
-    &:hover{
-        color: gold;
-        border: 1px solid gold;
+    .landing{
+        height: 88vh;
+        width: 100vw;
+        margin: 0;
+        background-image: url('../Assets/city-unsplash.png');
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(black, 0.5);
+        background-blend-mode: overlay;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .expo{
+            padding: 3vw;
+            width: 90%;
+            color: white;
+
+            h1{
+                margin: 0;
+                font-size: 7vw;
+                line-height: 8vw;
+                text-shadow: 0 0 20px black;
+            }
+            h2{
+                font-size: 4vw;
+
+            }
+            h3{
+                font-size: 3vw;
+                color: #C0C0C0;
+                font-weight: 500;
+                line-height: 4vw;
+                margin: 0;
+            }
+
+            .hor-flex{
+
+                margin-top: 2vw;
+
+                .button{
+                    margin-right: 1vw;
+                }
+            }
+        }
     }
-}
 
-.points{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: top;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-
-    .point{
-        width: 25vw;
-        text-align: center;
-        h1{
-            font-size: 2vw;
-        }
-        img{
-            width: 50%;
-        }
-        p{
-            font-size: 1vw;
-            line-height: 1.3vw;
-            color: rgba(white, 0.8);
-        }
+    .hor-flex{
+        display: flex;
+        align-items: center;
     }
 
-
-}
-
-.refs{
-    height: 50vh;
-    width: 100vw;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../Assets/city-unsplash-2.png');
-    background-color: rgba(black, 0.3);
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
     .button{
-        margin: 0.5vw;
+        background-color: black;
+        color: lighten(gold, 30%);
+        border: 1px solid black;
+        border-radius: 2vw;
+        padding: 3vw;
+        font-weight: 700;
+        font-size: 3vw;
+        transition: 0.2s ease;
+        &:hover{
+            color: gold;
+            border: 1px solid gold;
+        }
     }
-    .expo{
+
+    .points{
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+
+        .point{
+            width: 90vw;
+            text-align: center;
+            margin: auto;
+            padding: 2vw;
+            h1{
+                font-size: 6vw;
+            }
+            img{
+                width: 50%;
+            }
+            p{
+                font-size: 3vw;
+                line-height: 4vw;
+                color: rgba(white, 0.8);
+            }
+        }
+
+
+    }
+
+    .refs{
+        height: 50vh;
+        width: 100vw;
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 10vw;
         justify-content: center;
-        padding: 2vw;
-        text-align: center;
-       // background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.5), rgba(black, 0));
-        h1{
-            font-size: 2.5vw;
+        background-image: url('../Assets/city-unsplash-2.png');
+        background-color: rgba(black, 0.3);
+        background-blend-mode: overlay;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .button{
             margin: 0.5vw;
         }
-        h2{
-            font-size: 1.5vw;
-            color: rgba(white, 0.9);
-            margin: 1vw;
-            margin-bottom: 1.5vw;
+        .expo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2vw;
+            text-align: center;
+        // background: linear-gradient(to right, rgba(black, 0), rgba(black, 0.5), rgba(black, 0.5), rgba(black, 0));
+            h1{
+                font-size: 5.5vw;
+                margin: 2vw;
+            }
+            h2{
+                font-size: 3vw;
+                width: 80%;
+                color: rgba(white, 0.9);
+                margin: 2vw;
+                margin-bottom: 4vw;
+            }
         }
     }
 }

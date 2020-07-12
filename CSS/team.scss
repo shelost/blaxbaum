@@ -1,5 +1,4 @@
 
-
 .avatars{
     width: 100%;
     width: 100vw;
@@ -7,106 +6,278 @@
 
 }
 
-.avatar{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    padding-bottom: 4vw;
-    padding-top: 4vw;
-    border-bottom: 10px solid rgba(white, 0.2);
+@media screen and (min-width: 800px){
 
-    &.last{
-        border: none;
-    }
+    .avatar{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        padding-bottom: 4vw;
+        padding-top: 4vw;
+        border-bottom: 5px solid rgba(white, 0.2);
 
-    .pfp{
-        width: 30vw;
-        height: 30vw;
-        border-radius: 20vw;
-        //box-shadow: 0px 0px 70px rgba(white, 0.2);
-        border: 5px solid white;
-        margin-right: 3vw;
-        background-color: #050505;
-    }
-
-    .expo{
-        width: 55%;
-        h1{
-            font-size: 3vw;
-            margin: 0;
+        &.last{
+            border: none;
         }
-        h2{
-            font-size: 1.5vw;
-            margin: 0.2vw;
-            color: rgba(white, 0.6);
+
+        .pfp{
+            width: 30vw;
+            height: 30vw;
+            border-radius: 20vw;
+            //box-shadow: 0px 0px 70px rgba(white, 0.2);
+            border: 2px solid white;
+            margin-right: 3vw;
+            background-color: #050505;
+        }
+
+        .expo{
+            width: 55%;
+            h1{
+                font-size: 3vw;
+                margin: 0;
+            }
+            h2{
+                font-size: 1.5vw;
+                margin: 0.2vw;
+                color: rgba(white, 0.6);
+            }
+            p{
+                font-size: 0.9vw;
+                line-height: 1.5vw;
+                margin: 0;
+                color: rgba(white, 0.8);
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+
+        .sns{
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-right: 2vw;
+            opacity: 0.8;
+            transition: 0.2s ease;
+            img{
+                width: 3vw;
+                margin-bottom: 0.5vw;
+            }
+            p{
+                font-size: 1vw;
+                font-weight: 700;
+                width: 100%;
+                color: white;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .text{
+        width: 80vw;
+        margin: auto;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        text-align: center;
+        h1{
+            font-size: 5vw;
         }
         p{
-            font-size: 0.9vw;
-            line-height: 1.5vw;
-            margin: 0;
-            color: rgba(white, 0.8);
+            font-size: 1.3vw;
+            line-height: 1.8vw;
+            color: #A0A0A0;
+            span{
+                color: white;
+            }
         }
     }
+
+    .main{
+
+        background-image: url('../Assets/city-unsplash.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(black, 0.65);
+        background-blend-mode: overlay;
+    }
+
+    .carousel{
+        width: 50vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 8vw;
+        .link{
+            width: 20vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0.8;
+            transition: 0.2s ease;
+            img{
+                width: 5vw;
+                margin: auto;
+            }
+            h1{
+                font-size: 1.5vw;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
 }
 
-.contact{
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 800px){
 
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-
-    .sns{
-        width: fit-content;
+    .avatar{
+        width: 100%;
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 4vw;
+        padding-top: 4vw;
+
+        &.last{
+            border: none;
+        }
+
+        .pfp{
+            width: 60vw;
+            height: 60vw;
+            border-radius: 50vw;
+            border: 2px solid white;
+            margin-right: 3vw;
+            background-color: black;
+        }
+
+        .expo{
+            width: 80%;
+            margin-top: 3vw;
+            text-align: center;
+            h1{
+                font-size: 7vw;
+                margin: 0;
+            }
+            h2{
+                font-size: 4vw;
+                margin: 0.2vw;
+                color: rgba(white, 0.6);
+            }
+            p{
+                font-size: 3vw;
+                line-height: 4vw;
+                padding: 2vw;
+                margin: 0;
+                color: rgba(white, 0.8);
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        width: 90vw;
+        transform: translateX(-6vw);
+
+        .sns{
+            width: 15vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            opacity: 0.8;
+            transition: 0.2s ease;
+            img{
+                width: 7vw;
+                margin-bottom: 0.5vw;
+            }
+            p{
+                display: none;
+
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .text{
+        width: 80vw;
+        margin: auto;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
         text-align: center;
-        margin-right: 2vw;
-        opacity: 0.8;
-        transition: 0.2s ease;
-        img{
-            width: 3vw;
-            margin-bottom: 0.5vw;
+        h1{
+            font-size: 8.5vw;
         }
         p{
-            font-size: 1vw;
-            font-weight: 700;
-            width: 100%;
-            color: white;
-        }
-        &:hover{
-            opacity: 1;
-        }
-    }
-}
-
-.text{
-    width: 80vw;
-    margin: auto;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    text-align: center;
-    h1{
-        font-size: 5vw;
-    }
-    p{
-        font-size: 1.3vw;
-        line-height: 1.8vw;
-        color: #A0A0A0;
-        span{
-            color: white;
+            font-size: 3vw;
+            line-height: 4vw;
+            color: #A0A0A0;
+            span{
+                color: white;
+            }
         }
     }
+
+    .main{
+
+        padding-top: 15vw;
+        padding-bottom: 30vw;
+        background-image: url('../Assets/city-unsplash.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(black, 0.65);
+        background-blend-mode: overlay;
+    }
+
+    .carousel{
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5vw;
+        .link{
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0.8;
+            transition: 0.2s ease;
+            img{
+                width: 30vw;
+                margin: auto;
+            }
+            h1{
+                font-size: 4vw;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
 }
 
-.main{
-
-    background-image: url('../Assets/city-unsplash.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(black, 0.65);
-    background-blend-mode: overlay;
-}

@@ -1,102 +1,33 @@
-.main{
-    &.letter{
-        background-color: #FFE7A8;
-    }
-    &.online{
-        background-color: #B3FFA8;
-    }
-    &.resume{
-        background-color: #A8D3FF;
-    }
-    &.interview{
-        background-color: #E7A8FF;
-    }
+$yellow:#fff4d9;
+$green:#e7ffed;
+$blue:#dcf3ff;
+$purple:#fdf1ff;
+$red: #FFEBEB;
 
-    width: 95vw;
-    margin: auto;
-    border-radius: 1vw;
-    text-align: center;
-    padding-top: 2vw;
-    padding-bottom: 6vw;
-    background-image: url('../Assets/gradient.png');
+$redx:#E60000;
+$greenx:#FFCD00;
+$yellowx: #03CA00;
+
+.main{
     background-blend-mode: overlay;
     background-size: cover;
     background-attachment: fixed;
-
-    .title{
-        .box{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        img{
-            height: 4vw;
-            margin-left: 1vw;
-        }
-        h1{
-            font-size: 4vw;
-            font-weight: 900;
-            color: black;
-        }
-        p{
-            color: black;
-            width: 80%;
-            margin: auto;
-            margin-top: 1vw;
-            font-size: 1.5vw;
-        }
-        margin-bottom: 5vw;
+    &.letter{
+        background-image:url('../Assets/city-unsplash.png'), linear-gradient(45deg, $yellow, $green);
+    }
+    &.online{
+        background-image: url('../Assets/city-unsplash.png'), linear-gradient(45deg, $green, $blue);
+    }
+    &.resume{
+        background-image:url('../Assets/city-unsplash.png'), linear-gradient(45deg, $blue, $red);
+    }
+    &.interview{
+        background-image:url('../Assets/city-unsplash.png'), linear-gradient(45deg, $red, $purple);
+    }
+    &.research{
+        background-image:url('../Assets/city-unsplash.png'), linear-gradient(45deg, $purple, $yellow);
     }
 }
-
-.sec{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 3px solid rgba(black, 0.2);
-    padding-bottom: 2vw;
-    margin-bottom: 2vw;
-    .expo{
-        margin: 2vw;
-        width: 45vw;
-
-        p{
-            color: black;
-            font-size: 1.5vw;
-            font-weight: 900;
-            margin: 0;
-            margin-bottom: 0.5vw;
-        }
-        h1{
-            font-size: 2.5vw;
-            color: black;
-            width: fit-content;
-            margin: 0;
-            margin-bottom: 1vw;
-        }
-        h2{
-            color: rgba(black, 0.8);
-            font-size: 1.5vw;
-            font-weight: 500;
-            width: 80%;
-            margin: auto;
-
-        }
-    }
-    img{
-        height: 15vw;
-        width: auto;
-        margin: 0;
-    }
-    &.final{
-        border: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-}
-
 
 // Resume Review
 
@@ -122,9 +53,6 @@
 
 // Online Presence
 
-$red:#E60000;
-$green:#FFCD00;
-$yellow: #03CA00;
 
 .top{
     height: 2vw;
@@ -143,21 +71,21 @@ $yellow: #03CA00;
             transition: 0.2s ease;
         }
         .red{
-            background-color: $red;
+            background-color: $redx;
             &:hover{
-                background-color: darken($red, 10%);
+                background-color: darken($redx, 10%);
             }
         }
         .yellow{
-            background-color: $yellow;
+            background-color: $yellowx;
             &:hover{
-                background-color: darken($yellow, 10%);
+                background-color: darken($yellowx, 10%);
             }
         }
         .green{
-            background-color: $green;
+            background-color: $greenx;
             &:hover{
-                background-color: darken($green, 10%);
+                background-color: darken($greenx, 10%);
             }
         }
     }
@@ -175,14 +103,218 @@ $yellow: #03CA00;
     }
 }
 
-.carousel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5vw;
-    img{
-        height: 100%;
-        margin: 1vw;
-        border-radius: 1vw;
+
+
+@media screen and (min-width: 800px){
+
+    .main{
+        width: 100vw;
+        margin: auto;
+        text-align: center;
+        padding-top: 2vw;
+        padding-bottom: 6vw;
+
+
+        .title{
+            .box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            img{
+                height: 4vw;
+                margin-left: 1vw;
+            }
+            h1{
+                font-size: 5vw;
+                font-weight: 900;
+                color: black;
+            }
+            p{
+                color: black;
+                width: 80%;
+                margin: auto;
+                margin-top: 1vw;
+                font-size: 1.5vw;
+            }
+            margin-bottom: 5vw;
+        }
+    }
+
+    .sec{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 3px solid rgba(black, 0.2);
+        padding-bottom: 2vw;
+        margin-bottom: 2vw;
+        transition: 0.2s ease;
+        .expo{
+            margin: 2vw;
+            width: 45vw;
+            transition: 0.2s ease;
+
+            p{
+                color: black;
+                font-size: 1.5vw;
+                font-weight: 900;
+                margin: 0;
+                margin-bottom: 0.5vw;
+            }
+            h1{
+                font-size: 2.5vw;
+                color: black;
+                width: fit-content;
+                margin: 0;
+                margin-bottom: 1vw;
+            }
+            h2{
+                color: rgba(black, 0.8);
+                font-size: 1.5vw;
+                font-weight: 500;
+                width: 80%;
+                margin: auto;
+
+            }
+        }
+        img{
+            height: 15vw;
+            width: auto;
+            margin: 0;
+        }
+        &.final{
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .icon{
+            transition: 0.2s ease;
+        }
+    }
+
+    .carousel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vw;
+        transition: 0.2s ease;
+        img{
+            height: 100%;
+            margin: 1vw;
+            border-radius: 1vw;
+            transition: 0.2s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 }
+
+
+
+@media screen and (max-width: 800px){
+
+    .main{
+        width: 100vw;
+        margin: 0;
+        text-align: center;
+        padding-top: 2vw;
+        padding-bottom: 30vw;
+
+        .title{
+            img{
+                height: 13vw;
+                transform: translate(40vw, -25vw);
+            }
+            h1{
+                font-size: 8.5vw;
+                font-weight: 900;
+                color: black;
+                white-space: nowrap;
+                transform: translateY(12vw);
+            }
+            p{
+                color: black;
+                width: 90%;
+                margin: auto;
+                margin-top: -4vw;
+                font-size: 3.5vw;
+            }
+            margin-top: 10vw;
+            margin-bottom: 10vw;
+        }
+    }
+
+    .sec{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2vw;
+        margin-bottom: 5vw;
+        transition: 0.2s ease;
+        .expo{
+            margin: 2vw;
+            width: 90vw;
+            transition: 0.2s ease;
+
+            p{
+                color: black;
+                font-size: 3vw;
+                font-weight: 900;
+                margin: 0;
+                margin-bottom: 0.5vw;
+            }
+            h1{
+                font-size: 6vw;
+                color: black;
+                margin: 0;
+                margin-bottom: 2vw;
+            }
+            h2{
+                color: rgba(black, 0.8);
+                font-size: 4vw;
+                font-weight: 500;
+                margin: auto;
+
+            }
+
+        }
+        .icon{
+            height:60vw;
+            width: auto;
+            margin: 0;
+
+        }
+        &.final{
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .top{
+        display: none;
+    }
+
+    .carousel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 13vw;
+        transition: 0.2s ease;
+        padding: 3vw;
+        img{
+            height: 100%;
+            margin: 2vw;
+            border-radius: 3vw;
+            transition: 0.2s ease;
+        }
+    }
+}
+

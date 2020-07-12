@@ -1,168 +1,300 @@
-.landing {
-  height: 88vh;
-  width: 100vw;
-  margin: 0;
-  background-image: url("../Assets/city-unsplash.png");
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: overlay;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 800px) {
+  .landing {
+    height: 88vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url("../Assets/city-unsplash.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing .expo {
+    padding: 3vw;
+    width: 60%;
+    color: white;
+  }
+  .landing .expo h1 {
+    margin: 0;
+    font-size: 3vw;
+  }
+  .landing .expo h2 {
+    font-size: 2vw;
+  }
+  .landing .expo h3 {
+    font-size: 1.3vw;
+    color: #C0C0C0;
+    font-weight: 500;
+    line-height: 1.7vw;
+    margin: 0;
+  }
+  .landing .expo .hor-flex {
+    margin-top: 2vw;
+  }
+  .landing .expo .hor-flex .button {
+    margin-right: 1vw;
+  }
+  .hor-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .button {
+    background-color: black;
+    color: #ffef99;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    font-weight: 700;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .button:hover {
+    color: gold;
+    border: 1px solid gold;
+  }
+  .points {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+  .points .point {
+    width: 25vw;
+    text-align: center;
+  }
+  .points .point h1 {
+    font-size: 2vw;
+  }
+  .points .point img {
+    width: 50%;
+  }
+  .points .point p {
+    font-size: 1vw;
+    line-height: 1.3vw;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .refs {
+    height: 50vh;
+    width: 100vw;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url("../Assets/city-unsplash-2.png");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .refs .button {
+    margin: 0.5vw;
+  }
+  .refs .expo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2vw;
+    text-align: center;
+  }
+  .refs .expo h1 {
+    font-size: 2.5vw;
+    margin: 0.5vw;
+  }
+  .refs .expo h2 {
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 1vw;
+    margin-bottom: 1.5vw;
+  }
 }
 
-.landing .expo {
-  padding: 3vw;
-  width: 60%;
-  color: white;
-}
-
-.landing .expo h1 {
-  margin: 0;
-  font-size: 3vw;
-}
-
-.landing .expo h2 {
-  font-size: 2vw;
-}
-
-.landing .expo h3 {
-  font-size: 1.3vw;
-  color: #C0C0C0;
-  font-weight: 500;
-  line-height: 1.7vw;
-  margin: 0;
-}
-
-.landing .expo .hor-flex {
-  margin-top: 2vw;
-}
-
-.landing .expo .hor-flex .button {
-  margin-right: 1vw;
-}
-
-.hor-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.button {
-  background-color: black;
-  color: #ffef99;
-  border: 1px solid black;
-  border-radius: 0.5vw;
-  padding: 1vw;
-  font-weight: 700;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-
-.button:hover {
-  color: gold;
-  border: 1px solid gold;
-}
-
-.points {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-}
-
-.points .point {
-  width: 25vw;
-  text-align: center;
-}
-
-.points .point h1 {
-  font-size: 2vw;
-}
-
-.points .point img {
-  width: 50%;
-}
-
-.points .point p {
-  font-size: 1vw;
-  line-height: 1.3vw;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.refs {
-  height: 50vh;
-  width: 100vw;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url("../Assets/city-unsplash-2.png");
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: overlay;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.refs .button {
-  margin: 0.5vw;
-}
-
-.refs .expo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2vw;
-  text-align: center;
-}
-
-.refs .expo h1 {
-  font-size: 2.5vw;
-  margin: 0.5vw;
-}
-
-.refs .expo h2 {
-  font-size: 1.5vw;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 1vw;
-  margin-bottom: 1.5vw;
+@media screen and (max-width: 800px) {
+  .landing {
+    height: 88vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url("../Assets/city-unsplash.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing .expo {
+    padding: 3vw;
+    width: 90%;
+    color: white;
+  }
+  .landing .expo h1 {
+    margin: 0;
+    font-size: 7vw;
+    line-height: 8vw;
+    text-shadow: 0 0 20px black;
+  }
+  .landing .expo h2 {
+    font-size: 4vw;
+  }
+  .landing .expo h3 {
+    font-size: 3vw;
+    color: #C0C0C0;
+    font-weight: 500;
+    line-height: 4vw;
+    margin: 0;
+  }
+  .landing .expo .hor-flex {
+    margin-top: 2vw;
+  }
+  .landing .expo .hor-flex .button {
+    margin-right: 1vw;
+  }
+  .hor-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .button {
+    background-color: black;
+    color: #ffef99;
+    border: 1px solid black;
+    border-radius: 2vw;
+    padding: 3vw;
+    font-weight: 700;
+    font-size: 3vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .button:hover {
+    color: gold;
+    border: 1px solid gold;
+  }
+  .points {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+  .points .point {
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    padding: 2vw;
+  }
+  .points .point h1 {
+    font-size: 6vw;
+  }
+  .points .point img {
+    width: 50%;
+  }
+  .points .point p {
+    font-size: 3vw;
+    line-height: 4vw;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .refs {
+    height: 50vh;
+    width: 100vw;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 10vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url("../Assets/city-unsplash-2.png");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .refs .button {
+    margin: 0.5vw;
+  }
+  .refs .expo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2vw;
+    text-align: center;
+  }
+  .refs .expo h1 {
+    font-size: 5.5vw;
+    margin: 2vw;
+  }
+  .refs .expo h2 {
+    font-size: 3vw;
+    width: 80%;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 2vw;
+    margin-bottom: 4vw;
+  }
 }
 /*# sourceMappingURL=landing.css.map */
