@@ -3,7 +3,7 @@
     height: 88vh;
     width: 100vw;
     margin: 0;
-    background-image: url("../Assets/city-unsplash.png");
+    background-image: url("../Assets/city-unsplash.png"), linear-gradient(45deg, #FFD500, #00B2FF);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -26,16 +26,19 @@
   .landing .expo h1 {
     margin: 0;
     font-size: 3vw;
+    text-shadow: 0px 0px 30px black;
   }
   .landing .expo h2 {
     font-size: 2vw;
+    text-shadow: 0px 0px 30px black;
   }
-  .landing .expo h3 {
+  .landing .expo p {
     font-size: 1.3vw;
-    color: #C0C0C0;
+    color: #d0d0d0;
     font-weight: 500;
-    line-height: 1.7vw;
+    line-height: 1.8vw;
     margin: 0;
+    text-shadow: 0px 0px 30px black;
   }
   .landing .expo .hor-flex {
     margin-top: 2vw;
@@ -52,18 +55,38 @@
             align-items: center;
   }
   .button {
-    background-color: black;
-    color: #ffef99;
-    border: 1px solid black;
+    background: black;
     border-radius: 0.5vw;
     padding: 1vw;
     font-weight: 700;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    position: relative;
+    bottom: 0;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  }
+  .button h3 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: 0;
+    z-index: 3;
+    color: #ffef99;
   }
   .button:hover {
+    bottom: 7px;
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .button:hover h3 {
     color: gold;
-    border: 1px solid gold;
+  }
+  .button:hover .filler {
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3vw;
   }
   .points {
     display: -webkit-box;
@@ -110,7 +133,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-image: url("../Assets/city-unsplash-2.png");
+    background-image: url("../Assets/city-unsplash-2.png"), linear-gradient(45deg, #FFD500, #008FFF);
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
     background-attachment: fixed;
@@ -154,7 +177,7 @@
     height: 88vh;
     width: 100vw;
     margin: 0;
-    background-image: url("../Assets/city-unsplash.png");
+    background-image: url("../Assets/city-unsplash.png"), linear-gradient(45deg, #FFD500, #00B2FF);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -175,20 +198,25 @@
     color: white;
   }
   .landing .expo h1 {
-    margin: 0;
-    font-size: 7vw;
-    line-height: 8vw;
+    margin: 2vw;
+    font-size: 7.5vw;
+    line-height: 9vw;
     text-shadow: 0 0 20px black;
   }
   .landing .expo h2 {
     font-size: 4vw;
+    margin: 2vw;
+    text-shadow: 0 0 20px black;
   }
-  .landing .expo h3 {
-    font-size: 3vw;
-    color: #C0C0C0;
+  .landing .expo p {
+    font-size: 3.5vw;
+    color: #d0d0d0;
     font-weight: 500;
-    line-height: 4vw;
-    margin: 0;
+    line-height: 4.5vw;
+    margin: 2vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    text-shadow: 0 0 20px black;
   }
   .landing .expo .hor-flex {
     margin-top: 2vw;
@@ -205,19 +233,40 @@
             align-items: center;
   }
   .button {
-    background-color: black;
-    color: #ffef99;
-    border: 1px solid black;
+    background: black;
     border-radius: 2vw;
-    padding: 3vw;
+    border: 2px solid gold;
+    padding: 2.5vw;
     font-weight: 700;
-    font-size: 3vw;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    position: relative;
+    bottom: 0;
+    margin: 1vw;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  }
+  .button h3 {
+    font-size: 3.3vw;
+    font-weight: 600;
+    margin: 0;
+    z-index: 3;
+    color: #ffef99;
   }
   .button:hover {
+    bottom: 7px;
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .button:hover h3 {
     color: gold;
-    border: 1px solid gold;
+  }
+  .button:hover .filler {
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3vw;
   }
   .points {
     padding-top: 3vw;
@@ -264,9 +313,6 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .refs .button {
-    margin: 0.5vw;
   }
   .refs .expo {
     display: -webkit-box;

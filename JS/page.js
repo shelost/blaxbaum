@@ -17,22 +17,11 @@ let STRING =
             </div>
         </a>
 
-
-        <div class = 'navbtn'>
-            <h1> About </h1>
-            <div class = 'dropdown'>
-                <a href = '../../@/about/mission.html'>
-                    <div class = 'dropbtn'>
-                        <h1> Our Mission </h1>
-                    </div>
-                </a>
-                <a href = '../../@/about/team.html'>
-                    <div class = 'dropbtn'>
-                        <h1> The Team </h1>
-                    </div>
-                </a>
+        <a href = '../about/team.html'>
+            <div class = 'navbtn'>
+                <h1 class = 'direct'> About </h1>
             </div>
-        </div>
+        </a>
 
         <div class = 'navbtn'>
             <h1> Services </h1>

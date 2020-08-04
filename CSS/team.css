@@ -99,25 +99,27 @@
   }
   .text h1 {
     font-size: 5vw;
+    text-shadow: 0px 0px 40px black;
   }
   .text p {
     font-size: 1.3vw;
     line-height: 1.8vw;
-    color: #A0A0A0;
+    font-weight: 500;
+    text-shadow: 0px 0px 30px black;
   }
   .text p span {
-    color: white;
+    font-weight: 900;
   }
   .main {
-    background-image: url("../Assets/city-unsplash.png");
+    background-image: url("../Assets/city-unsplash.png"), linear-gradient(45deg, #FFD500, #00B2FF);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
   }
   .carousel {
-    width: 50vw;
+    width: 60vw;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -129,9 +131,13 @@
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 8vw;
+    position: relative;
   }
   .carousel .link {
-    width: 20vw;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15vw;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -142,19 +148,46 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    opacity: 0.8;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 0.99;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    background-color: black;
   }
   .carousel .link img {
-    width: 5vw;
-    margin: auto;
+    width: 6vw;
   }
   .carousel .link h1 {
-    font-size: 1.5vw;
+    font-size: 0.8vw;
+    font-weight: 500;
   }
-  .carousel .link:hover {
-    opacity: 1;
+  .carousel .link .filler {
+    position: absolute;
+    border-radius: 15vw;
+    z-index: -2;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    top: 7.5vw;
+    left: 7.5vw;
+    width: 0;
+    height: 0;
+  }
+  .carousel .link .filler.red {
+    background-color: red;
+  }
+  .carousel .link .filler.green {
+    background-color: #00EC76;
+  }
+  .carousel .link .filler.blue {
+    background-color: #00AAFF;
+  }
+  .carousel .link:hover .filler {
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 15vw;
   }
 }
 

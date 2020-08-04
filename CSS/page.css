@@ -180,9 +180,10 @@
   }
   .sec .expo {
     margin: 2vw;
-    width: 45vw;
+    width: 40vw;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    text-align: left;
   }
   .sec .expo p {
     color: black;
@@ -199,18 +200,20 @@
     width: fit-content;
     margin: 0;
     margin-bottom: 1vw;
+    font-weight: 900;
   }
   .sec .expo h2 {
     color: rgba(0, 0, 0, 0.8);
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: 500;
-    width: 80%;
     margin: auto;
   }
   .sec img {
-    height: 15vw;
-    width: auto;
+    width: 25vw;
     margin: 0;
+  }
+  .sec.right .expo {
+    text-align: right;
   }
   .sec.final {
     border: none;
@@ -231,12 +234,15 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 5vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 20vw;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
   }
   .carousel img {
-    height: 100%;
+    height: 7vw;
+    width: 7vw;
     margin: 1vw;
     border-radius: 1vw;
     -webkit-transition: 0.2s ease;
@@ -253,7 +259,7 @@
     width: 100vw;
     margin: 0;
     text-align: center;
-    padding-top: 2vw;
+    padding-top: 15vw;
     padding-bottom: 30vw;
   }
   .main .title {
@@ -261,23 +267,19 @@
     margin-bottom: 10vw;
   }
   .main .title img {
-    height: 13vw;
-    -webkit-transform: translate(40vw, -25vw);
-            transform: translate(40vw, -25vw);
+    display: none;
   }
   .main .title h1 {
     font-size: 8.5vw;
     font-weight: 900;
     color: black;
     white-space: nowrap;
-    -webkit-transform: translateY(12vw);
-            transform: translateY(12vw);
   }
   .main .title p {
     color: black;
     width: 90%;
     margin: auto;
-    margin-top: -4vw;
+    margin-top: 0;
     font-size: 3.5vw;
   }
   .sec {
